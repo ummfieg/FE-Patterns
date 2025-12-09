@@ -1,0 +1,98 @@
+.index-styles__Container {
+  height: 100vh;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.line-nav__Container {
+  box-sizing: border-box;
+  position: fixed;
+  pointer-events: auto;
+  display: flex;
+  margin: 0 auto;
+  justify-content: end;
+  max-width: 1240px;
+  width: 100%;
+  padding-right: 56px;
+}
+
+.line-nav__Wrapper {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.line-nav__Wrapper:hover {
+  opacity: 0.5;
+}
+
+.line-nav__DotWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.line-nav__list {
+  list-style: none;
+  padding: 6px 0px 6px 12px;
+}
+
+.line-nav__list > button {
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #000000;
+}
+
+.line-nav__list > button.active {
+  width: 40px;
+}
+
+.lineNav-styles {
+  flex-direction: column;
+  align-items: flex-start;
+  visibility: hidden;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding: 20px 40px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  backdrop-filter: blur(4px);
+}
+.lineNav-styles.active {
+  visibility: visible;
+}
+.lineNav-styles__Items {
+  min-width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1rem;
+  text-align: center;
+  cursor: pointer;
+  color: gray;
+}
+
+.lineNav-styles__Items.active {
+  font-weight: bold;
+  color: aquamarine;
+}
+
+.lineNav-styles__Items:hover {
+  color: white;
+}
